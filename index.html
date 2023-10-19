@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundu's Porttfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    
+
+</head>
+<body>
+    <header>
+        
+
+        <div class="hero">
+            
+            
+            <div class="left-hero">
+                <div class="nav">
+                    <h2 class="logo"><span class="logo-fixed">M</span> <span class="logo-name"> Mundu </span></h2>
+                    
+                </div>
+                <div class="hero-text">
+                    <div class="main-title">
+                        <h1 class="title">Frontend Developer.</h1> 
+                        <p>I like to craft solid and scalable frontend products with great user experiences.</p>
+                    </div>
+                    <div class="hero-subtitle">
+                        <p class="sub1">Fairly proficient at progressive enhancement, design systems & UI Engineering</p>
+                        <p class="sub2">Proven experience building a successful JavaScript tax calculator and of course this portfolio website.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="right-hero">
+                <div class="menu">
+                    <i class="fa-solid fa-bars" id="open-btn"></i>
+                </div>
+                <div class="hero-image"></div>
+            </div>
+        </div>
+    </header>
+    <section class="info">
+        <div class="sect-info">
+            <div class="left-info">
+                <h1>Design</h1>
+                <div class="left-info-text text">
+                    <p>I'm not your typical designer, spending all day adjusting tiny pixels in Illustrator. I'm more into working with stylesheets, changing font sizes, and figuring out how things should look (^_^). My main goal is to make sure users have a smooth experience while keeping everything stylish</p>
+                </div>
+                <div class="left-info-img">
+                    <img src="images/css.jpeg" alt="">
+                </div>
+            </div>
+            <div class="right-info">
+                
+                <div class="right-ifo-img">
+                    <img src="images/js.jpg" alt="">
+                </div>
+                <div class="right-info-text text">
+                    <h1>Engineering</h1>
+                    <p>In JavaScript app development, I've got the essential tools and skills. I can work on my own to create applications that are fast and robust, and they're designed to handle more users as they grow. Making things run smoothly and keeping them adaptable is my goal! 🚀</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about-me">
+            <p class="open-quote">“</p>
+        <p class="profile-info quote-space">
+            I developed a keen interest in technology from a young age, and my formal journey into the tech world began in 2021.
+            During my free time, I dedicated myself to learning and honing my skills through the FreeCodeCamp platform. As a result, I accomplished the following projects:</p>
+
+        <ul>
+            <li class="profile-info">JavaScript Tax Calculator: I designed and implemented a JavaScript-based tax calculator, showcasing my proficiency in the language and problem-solving skills.</li>
+
+            <li class="profile-info">Art Gallery Website Clone: I successfully replicated the homepage of an art gallery website, demonstrating my ability to create responsive and visually appealing web designs.</li>
+        </ul>
+
+       <p class="profile-info">These projects reflect my commitment to continuous learning and practical application in the field of technology. I am excited to share them on my portfolio website as a testament to my growing expertise.</p>
+        </div>
+    </section>
+    <section class="projects">
+        <h2>Projects</h2>
+
+        <div class="projects-wrapper">
+            
+            <div class="project-1">
+               <h3 class="project-name">Zambian PAYE Calculator</h3>
+               <p class="project-description">
+                This is a PAYE Calculator,PAYE short for Pay As You Earn is a form of Zambian tax on incomes and gains of an employeed person.
+               </p> 
+               <a href="https://form-7kb.pages.dev/" target="_blank">
+                <button class="my-work"><span class="source-link"> view my work</span></button>
+               </a>
+            </div>
+            <div class="project-2">
+                <h3 class="project-name">Skymeadow Gallery Clone</h3>
+               <p class="project-description">
+                This is a clone for an e-commerce Art Gallery website home page.
+               </p> 
+               <a href="">
+                <button class="my-work"><span class="source-link"> view my work</span></button>
+               </a>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h3 class="message">Send me a message!</h3>
+        <p class="message">Interested in working together? Get in touch.</p>
+        <form action="">
+        <fieldset class="input-container">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email address"required>
+            <label class="text-message"for="message">Your Message</label>
+            <textarea name="message" id="message" rows="10" placeholder="Write your message here" required></textarea>
+
+        </fieldset>
+        <div class="submit" id="send-mail"><button class="my-work sub-btn"><span class="source-link"> send</span></button></div>
+        </form>
+        
+    </section>
+    <footer>
+        <div class="footer">
+        <p>&copy; Brian Mundu 2023</p>
+        </div>
+    </footer>
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function(){
+       emailjs.init("oP649QRfxz5LrO4L_");
+    })();
+ </script>
+    <script src="index.js"></script>
+</body>
+</html>
