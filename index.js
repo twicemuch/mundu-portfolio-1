@@ -1,10 +1,28 @@
+const closeBtn = document.getElementById('close-btn');
 const openBtn = document.getElementById('open-btn');
 const sendBtn = document.getElementById("send-mail");
 
+
 openBtn.addEventListener('click', () => {
-    alert('Sorry menu button currently not woking...')
+ const menu = document.getElementById('nav-menu');
+ const closeBtn = document.getElementById('close-btn');
+    menu.style.display = "block";
+    closeBtn.style.display = "block";
+    openBtn.style.display = "none";
+});
+function closeMenu() {
+    const menu = document.getElementById('nav-menu');
+    menu.style.display = "none";
+    closeBtn.style.display = "none";
+    openBtn.style.display = "block";
+}
+
+closeBtn.addEventListener('click', () => {
+    closeMenu();
 });
 
+
+//emailjs function......working with the html form
 function sendMail() {
     const nameInput = document.getElementById("name").value;
     const emailInput = document.getElementById("email").value;

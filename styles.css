@@ -6,6 +6,58 @@
 body {
     background-color: #f5f6f7;
 }
+nav {
+    position: fixed;
+    font-family: "Audiowide", sans-serif;
+    right: 5%;
+    top: 5rem;
+    width: 15rem;
+    height: fit-content;
+    z-index: 20;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    width: 100%;
+    height: 5.8rem;
+    animation: animateNavItems .4s linear forwards;
+    transform-origin: top right;
+    opacity: 0;
+}
+nav li:nth-child(2) {
+    animation-delay: .2s;
+}
+nav li:nth-child(3) {
+    animation-delay: .4s;
+}
+nav li:nth-child(4) {
+    animation-delay: .6s;
+}
+.nav-links a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    /* background-color: #978eca; */
+    background-color: #c1d4a8;
+    box-shadow: -4rem 6rem 10rem rgba(0,0,0,0.6);
+    display: grid;
+    place-items: center;
+}
+.nav-links a:hover {
+    background-color: #cccec9;
+    color: #010413; 
+}
+
+@keyframes animateNavItems {
+    0% {
+        transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+    }
+    100% {
+        transform: rotateZ(0) rotateX(0) scale(1);
+        opacity: 1;
+    }
+}
 .fa-bars {
     color: #98ca56;
     padding: .6rem;
@@ -13,10 +65,19 @@ body {
     text-shadow: 3px 3px 3px #010413;
     cursor: pointer;
 }
+.fa-x {
+    color: #98ca56;
+    padding: .6rem;
+    font-size: 1.5rem;
+    text-shadow: 3px 3px 3px #010413;
+    cursor: pointer;
+    display: none;
+}
 .logo-fixed {
     position: fixed;
     transition: .400ms;
     display: none;
+    z-index: 12;
 }
 .fixed1 {
     display: block;
@@ -40,7 +101,7 @@ body {
 .menu {
     position: fixed;
     right: 2rem;
-    top: 1.3rem;
+    top: 1rem;
 }
 .left-hero {
     background-color: #4831d4;
