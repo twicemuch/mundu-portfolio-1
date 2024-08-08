@@ -7,16 +7,24 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
-    
+
+
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+
+     
 
 </head>
 <body>
     <header>
         <nav id="nav-menu">
             <ul class="nav-bar">
+                <li class="nav-links"><a href="#about-me">About me</a></li>
                 <li class="nav-links"><a href="#projects">Projects</a></li>
                 <li class="nav-links"><a href="#get-in-touch">Get in touch</a></li>
-                <li class="nav-links"><a href="#about-me">About me</a></li>
                 <li class="nav-links"><a href="https://www.linkedin.com/in/brian-mundu-8703a8235">Linkd.com/Mundu</a></li>
             </ul>
         </nav>
@@ -32,11 +40,11 @@
                 </div>
                 <div class="hero-text">
                     <div class="main-title">
-                        <h1 class="title">Frontend Developer.</h1> 
-                        <p>I like to craft solid and scalable frontend products with great user experiences.</p>
+                        <h1 class="title">Frontend Developer<span class="title-point">.</span></h1> 
+                        <p>I enjoy creating user-friendly and reliable websites that work well on different devices and provide a great user experience.</p>
                     </div>
                     <div class="hero-subtitle">
-                        <p class="sub1">Fairly proficient at progressive enhancement, design systems & UI Engineering</p>
+                        <p class="sub1">Fairly proficient at progressive enhancement, design systems ,UI Engineering & basic <span class="python-inf">Python</span> for backend development </p>
                         <p class="sub2">Proven experience building a successful JavaScript tax calculator and of course this portfolio website.</p>
                     </div>
                     
@@ -51,24 +59,25 @@
             </div>
         </div>
     </header>
-    <section class="info">
+    <section class="info">     
         <div class="sect-info">
             <div class="left-info">
-                <h1>Design</h1>
+                <h1 class="info-img">Design</h1>
                 <div class="left-info-text text">
                     <p>I'm not your typical designer, spending all day adjusting tiny pixels in Illustrator. I'm more into working with stylesheets, changing font sizes, and figuring out how things should look (^_^). My main goal is to make sure users have a smooth experience while keeping everything stylish</p>
                 </div>
-                <div class="left-info-img">
-                    <img src="images/css.jpeg" alt="">
+                <div class="left-info-img info-img">
+                    <img src="images/css.jpeg" alt="a picture of a css book">
                 </div>
             </div>
             <div class="right-info">
                 
-                <div class="right-ifo-img">
-                    <img src="images/js.jpg" alt="">
+                <div class="right-info-img info-img">
+                    <img src="images/js.jpg" alt="a picture of javascript code">
                 </div>
+                 <!-- <h1 class="info-img">Engineering</h1> -->
                 <div class="right-info-text text">
-                    <h1>Engineering</h1>
+                    <h1 class="info-img">Engineering</h1>
                     <p>In JavaScript app development, I've got the essential tools and skills. I can work on my own to create applications that are fast and robust, and they're designed to handle more users as they grow. Making things run smoothly and keeping them adaptable is my goal! 🚀</p>
                 </div>
             </div>
@@ -85,8 +94,9 @@
             <li class="profile-info">JavaScript Tax Calculator: I designed and implemented a JavaScript-based tax calculator, showcasing my proficiency in the language and problem-solving skills.</li>
 
             <li class="profile-info">Art Gallery Website Clone: I successfully replicated the homepage of an art gallery website, demonstrating my ability to create responsive and visually appealing web designs.</li>
+            <li class="profile-info">Rental Payment Tracker: I successfully created a basic rental payment tracker for a friend to be used on his local machine using Python and postgreSQL.</li>
         </ul>
-
+        <p class="profile-info">Skills Gained: <span class="skill-text_color">HTML5, CSS3, Responsive Web Design,JavaScript ES6, Algorithm Development, Python, postgreSQL, Flask,Psycopg2.</span></p>
        <p class="profile-info">These projects reflect my commitment to continuous learning and practical application in the field of technology. I am excited to share them on my portfolio website as a testament to my growing expertise.</p>
         </div>
     </section>
@@ -105,27 +115,83 @@
                </a>
             </div>
             <div class="project-2">
-                <h3 class="project-name">Skymeadow Gallery Clone</h3>
+                <h3 class="project-name">
+                    Mundu Portfolio Website
+                </h3>
                <p class="project-description">
                 This is a clone for an e-commerce Art Gallery website home page.
                </p> 
-               <a href="">
+               <a href="#">
                 <button class="my-work"><span class="source-link"> view my work</span></button>
                </a>
             </div>
         </div>
+        <h3 class="practice-projects">Demo Projects</h3>
+        
+        <!-- Carousel wrapper -->
+        <div class="slider">
+          <div class="slider_slides-cont">
+            
+             <div class="slider_slide">
+                <video width="100%">
+                  <source src="videos/gallery1.mp4" type="video/mp4">
+                  Sorry your browser does not support the video format.
+                </video>
+                <div class="slide_caption">
+                  <h5>Art Gallery</h5>
+                  <p>A clone for Skymeadow art gallery homepage.</p>
+                </div>
+             </div>
+             <div class="slider_slide">
+              <video width="100%">
+                <source src="videos/rental1.mp4" type="video/mp4">
+                Sorry your browser does not support the video format.
+              </video>
+              <div class="slide_caption">
+                <h5>Payment Tracker</h5>
+                <p>For keeping track of rental payments recieved from tenants.</p>
+              </div>
+           </div>
+           <div class="slider_slide">
+              <video width="100%">
+                <source src="videos/weather.mp4" type="video/mp4">
+                Sorry your browser does not support the video format.
+              </video>
+              <div class="slide_caption">
+                <h5>Weather Application</h5>
+                <p>This weather application gives you weather,humidity and weed speed.</p>
+              </div>
+           </div>
+             
+          </div>
+          <div class="slider_pagination"></div>
+          <!-- <button class="slider_nav slider_nav_prev">&larr; Previous</button>
+          <button class="slider_nav slider_nav_next">Next &rarr;</button> -->
+          <div class="slider_nav slider_nav_prev ">
+              
+              <i class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div class="slider_nav slider_nav_next">
+        
+              <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          
+       </div>
+       <div class="corousel-option" id="corousel-option"><p></p></div>
+<!-- Carousel wrapper -->
     </section>
     <section class="contact" id="get-in-touch">
         <h3 class="message">Send me a message!</h3>
         <p class="message">Interested in working together? Get in touch.</p>
         <form action="">
         <fieldset class="input-container">
-            <label for="name">Name</label>
+            <label for="name">Name <spa class="required">*</spa></label>
             <input type="text" name="name" id="name" placeholder="Enter your name" required>
-            <label for="email">Email</label>
+            <label for="email">Email <spa class="required">*</spa></label>
             <input type="email" name="email" id="email" placeholder="Enter your email address"required>
-            <label class="text-message"for="message">Your Message</label>
+            <label class="text-message"for="message">Your Message <spa class="required">*</spa></label>
             <textarea name="message" id="message" rows="10" placeholder="Write your message here" required></textarea>
+            <p id ="invalid-input"></p>
 
         </fieldset>
         <div class="submit" id="send-mail"><button class="my-work sub-btn"><span class="source-link"> send</span></button></div>
@@ -134,7 +200,7 @@
     </section>
     <footer>
         <div class="footer">
-        <p>&copy; Brian Mundu 2023</p>
+        <p>&copy; Brian Mundu 2024</p>
         </div>
     </footer>
     
@@ -147,5 +213,10 @@
     })();
  </script>
     <script src="index.js"></script>
+
+   <!-- mdb starts here.. -->
+    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
 </body>
 </html>
