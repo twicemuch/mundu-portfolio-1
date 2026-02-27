@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundu's Porttfolio</title>
+    <title>Brian Mundu | Frontend Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Brian Mundu, a Frontend Developer specialized in UI Engineering, design systems, and building user-friendly web experiences.">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 
-
-    <!-- Google Fonts Roboto -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"/>
 
      
 
 </head>
 <body>
+    <canvas id="bg-canvas"></canvas>
     <header>
-        <nav id="nav-menu">
-            <ul class="nav-bar">
-                <li class="nav-links"><a href="#about-me">About me</a></li>
-                <li class="nav-links"><a href="#projects">Projects</a></li>
-                <li class="nav-links"><a href="#get-in-touch">Get in touch</a></li>
-                <li class="nav-links"><a href="https://www.linkedin.com/in/brian-mundu-8703a8235">Linkd.com/Mundu</a></li>
+        <button id="theme-switch">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M338.5-338.5Q280-397 280-480t58.5-141.5Q397-680 480-680t141.5 58.5Q680-563 680-480t-58.5 141.5Q563-280 480-280t-141.5-58.5ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>  
+        </button>
+        <nav class="dot-nav">
+            <ul>
+                <li><a href="#about-me" class="active" aria-label="About"></a></li>
+                <li><a href="#projects" aria-label="Projects"></a></li>
+                <li><a href="#get-in-touch" aria-label="Contact"></a></li>
+                <li><a href="https://www.linkedin.com/in/brian-mundu-8703a8235" target="_blank" aria-label="Linkedin"></a></li>
             </ul>
         </nav>
         
@@ -41,30 +43,46 @@
                 <div class="hero-text">
                     <div class="main-title">
                         <h1 class="title">Frontend Developer<span class="title-point">.</span></h1> 
-                        <p>I enjoy creating user-friendly and reliable websites that work well on different devices and provide a great user experience.</p>
+                        <p>I build user-friendly websites and functional tools. From responsive web interfaces to custom Python desktop applications, I focus on creating reliable software that people actually use.</p>
                     </div>
                     <div class="hero-subtitle">
-                        <p class="sub1">Fairly proficient at progressive enhancement, design systems ,UI Engineering & basic <span class="python-inf">Python</span> for backend development </p>
-                        <p class="sub2">Proven experience building a successful JavaScript tax calculator and of course this portfolio website.</p>
+                        <p class="sub1">I’m focused on UI Engineering and design systems—building interfaces that look great and work reliably on any device, backed by <span class="python-inf">Python</span> logic for backend development.</p>
+                        <p class="sub2">I build intuitive, reliable apps—like the Python POS system I developed for a local business-along with a Zambian PAYE calculator and this portfolio.</p>
                     </div>
                     
                 </div>
             </div>
             <div class="right-hero">
-                <div class="menu">
-                    <i class="fa-solid fa-bars" id="open-btn"></i>
-                    <i class="fa-solid fa-x" id="close-btn"></i>
-                </div>
                 <div class="hero-image"></div>
             </div>
         </div>
+        <!-- bounce arrow code starts here -->
+        <div class="hero-footer">
+            <div class="action-row">
+                <a href="#projects" class="view-work-btn">View Projects</a>
+                <div class="social-icons">
+                    <a href="mailto:brianmundu01@gmail.com" aria-label="Email Me"><i class="fa fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/brian-mundu-8703a8235" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <a href="#projects" class="scroll-arrow" aria-hidden="true">
+                <svg xmlns="http://www.w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="animate-bounce">
+                    <path d="M12 5v14"></path>
+                    <path d="m19 12-7 7-7-7"></path>
+                </svg>
+            </a>
+        </div>
+
+
+         <!--and ends here-->
     </header>
     <section class="info">     
         <div class="sect-info">
             <div class="left-info">
                 <h1 class="info-img">Design</h1>
                 <div class="left-info-text text">
-                    <p>I'm not your typical designer, spending all day adjusting tiny pixels in Illustrator. I'm more into working with stylesheets, changing font sizes, and figuring out how things should look (^_^). My main goal is to make sure users have a smooth experience while keeping everything stylish</p>
+                    <p>I'm not your typical designer, spending all day adjusting tiny pixels in Illustrator. I’d much rather be in the stylesheets, tweaking layouts and figuring out exactly how things should work. My goal is simple: build a smooth, reliable experience that looks stylish and actually works.⚡</p>
                 </div>
                 <div class="left-info-img info-img">
                     <img src="images/css.jpeg" alt="a picture of a css book">
@@ -87,17 +105,16 @@
         <div class="about-me">
             <p class="open-quote">“</p>
         <p class="profile-info quote-space">
-            I developed a keen interest in technology from a young age, and my formal journey into the tech world began in 2021.
-            During my free time, I dedicated myself to learning and honing my skills through the FreeCodeCamp platform. As a result, I accomplished the following projects:</p>
+           I started teaching myself to code in 2021, spending my free time building out projects on freeCodeCamp. Since then, I've focused on moving beyond tutorials to solve real-world problems and build functional tools. As a result, I’ve accomplished the following projects:</p>
 
         <ul>
-            <li class="profile-info">JavaScript Tax Calculator: I designed and implemented a JavaScript-based tax calculator, showcasing my proficiency in the language and problem-solving skills.</li>
+            <li class="profile-info">Point of Sale (POS) System: I built this custom desktop app to automate sales and inventory for a client. They are currently using the MVP for their daily operations while I work on a hybrid sync system to connect the local SQLite data with a central Postgres server.</li>
 
-            <li class="profile-info">Art Gallery Website Clone: I successfully replicated the homepage of an art gallery website, demonstrating my ability to create responsive and visually appealing web designs.</li>
-            <li class="profile-info">Rental Payment Tracker: I successfully created a basic rental payment tracker for a friend to be used on his local machine using Python and postgreSQL.</li>
+            <li class="profile-info">JavaScript Tax Calculator: I designed and implemented a JavaScript-based tax calculator, showcasing my proficiency in the language and problem-solving skills.</li>
+            <li class="profile-info">Rental Payment Tracker: I successfully created a basic rental payment tracker for a friend to be used on his local machine using Python, Flask and postgreSQL.</li>
         </ul>
         <p class="profile-info">Skills Gained: <span class="skill-text_color">HTML5, CSS3, Responsive Web Design,JavaScript ES6, Algorithm Development, Python, postgreSQL, Flask,Psycopg2.</span></p>
-       <p class="profile-info">These projects reflect my commitment to continuous learning and practical application in the field of technology. I am excited to share them on my portfolio website as a testament to my growing expertise.</p>
+       <p class="profile-info">These projects are just the start of my journey as I keep building and learning. I’m really excited to share what I’ve been working on, and I'm always looking for new challenges to tackle with code.</p>
         </div>
     </section>
     <section class="projects" id="projects">
@@ -108,7 +125,7 @@
             <div class="project-1">
                <h3 class="project-name">Zambian PAYE Calculator</h3>
                <p class="project-description">
-                This is a PAYE Calculator,PAYE short for Pay As You Earn is a form of Zambian tax on incomes and gains of an employeed person.
+                This is a PAYE Calculator,PAYE short for Pay As You Earn is a form of Zambian tax on incomes and gains of an employed person.
                </p> 
                <a href="https://form-7kb.pages.dev/" target="_blank">
                 <button class="my-work"><span class="source-link"> view my work</span></button>
@@ -119,88 +136,63 @@
                     Mundu Portfolio Website
                 </h3>
                <p class="project-description">
-                This is a clone for an e-commerce Art Gallery website home page.
+                A personal portfolio showcasing my projects, skills, and growth as a developer.
                </p> 
                <a href="#">
                 <button class="my-work"><span class="source-link"> view my work</span></button>
                </a>
             </div>
         </div>
-        <h3 class="practice-projects">Demo Projects</h3>
-        
-        <!-- Carousel wrapper -->
-        <div class="slider">
-          <div class="slider_slides-cont">
-            
-             <div class="slider_slide">
-                <video width="100%">
-                  <source src="videos/gallery1.mp4" type="video/mp4">
-                  Sorry your browser does not support the video format.
-                </video>
-                <div class="slide_caption">
-                  <h5>Art Gallery</h5>
-                  <p>A clone for Skymeadow art gallery homepage.</p>
+     <div class="gallery-container">
+            <!-- First Python App -->
+            <div class="image-box">
+                <img src="images/pos-sale-page.png" alt="POS System Development">
+                <div class="caption">
+                    <span class="type-badge">Python Desktop App</span>
+                    <h3>Point of Sale System</h3>
+                    <p>Currently working on a **Hybrid Database System**: syncing local **SQLite** data with a central **PostgreSQL** server for real-time inventory tracking across multiple devices.</p>
+                    <span class="status-delivered"><i class="fa-solid fa-spinner fa-spin"></i> Implementing Cloud Sync</span>
                 </div>
-             </div>
-             <div class="slider_slide">
-              <video width="100%">
-                <source src="videos/rental1.mp4" type="video/mp4">
-                Sorry your browser does not support the video format.
-              </video>
-              <div class="slide_caption">
-                <h5>Payment Tracker</h5>
-                <p>For keeping track of rental payments recieved from tenants.</p>
-              </div>
-           </div>
-           <div class="slider_slide">
-              <video width="100%">
-                <source src="videos/weather.mp4" type="video/mp4">
-                Sorry your browser does not support the video format.
-              </video>
-              <div class="slide_caption">
-                <h5>Weather Application</h5>
-                <p>This weather application gives you weather,humidity and weed speed.</p>
-              </div>
-           </div>
-             
-          </div>
-          <div class="slider_pagination"></div>
-          <!-- <button class="slider_nav slider_nav_prev">&larr; Previous</button>
-          <button class="slider_nav slider_nav_next">Next &rarr;</button> -->
-          <div class="slider_nav slider_nav_prev ">
-              
-              <i class="fa-solid fa-chevron-left"></i>
-          </div>
-          <div class="slider_nav slider_nav_next">
-        
-              <i class="fa-solid fa-chevron-right"></i>
-          </div>
-          
-       </div>
-       <div class="corousel-option" id="corousel-option"><p></p></div>
-<!-- Carousel wrapper -->
+            </div>
+
+
+            <div class="image-box">
+                <img src="images/Rental Payment Tracker.png" alt="Automation Tool Screenshot">
+                <div class="caption">
+                    <span class="type-badge">Python Desktop</span>
+                    <h3>Rental Payment Tracker</h3>
+                    <p>Developed a custom tool for a private client to track rental payments. Focused on delivering a portable, user-friendly interface.</p>
+                    <span class="status-delivered"><i class="fa-solid fa-check-circle"></i> Delivered & Paid</span>
+                </div>
+            </div>
+        </div>
+
+
     </section>
     <section class="contact" id="get-in-touch">
+        <div class="contact-sect-wrapper">
         <h3 class="message">Send me a message!</h3>
         <p class="message">Interested in working together? Get in touch.</p>
         <form action="">
         <fieldset class="input-container">
-            <label for="name">Name <spa class="required">*</spa></label>
-            <input type="text" name="name" id="name" placeholder="Enter your name" required>
-            <label for="email">Email <spa class="required">*</spa></label>
-            <input type="email" name="email" id="email" placeholder="Enter your email address"required>
-            <label class="text-message"for="message">Your Message <spa class="required">*</spa></label>
+            <label class="label-padding" for="name">Name <spa class="required">*</spa></label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required autocomplete="name">
+            <label class="label-padding" for="email">Email <spa class="required">*</spa></label>
+            <input type="email" name="email" id="email" placeholder="Enter your email address"required autocomplete="email address">
+            <label class="text-message label-padding"for="message">Message <spa class="required">*</spa></label>
             <textarea name="message" id="message" rows="10" placeholder="Write your message here" required></textarea>
             <p id ="invalid-input"></p>
 
         </fieldset>
-        <div class="submit" id="send-mail"><button class="my-work sub-btn"><span class="source-link"> send</span></button></div>
+        <div class="submit" id="send-mail"><button class="my-work sub-btn" id="send-email-btn"><span class="source-link"> send</span></button></div>
         </form>
-        
+        </div>
     </section>
     <footer>
         <div class="footer">
-        <p>&copy; Brian Mundu 2024</p>
+        <a href="https://www.linkedin.com/in/brian-mundu-8703a8235" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="mailto:brianmundu01@gmail.com"><i class="fa fa-envelope"></i></a>
+        <p><i class="fa fa-copyright"></i> Brian Mundu 2026. All rights reserved.</p>
         </div>
     </footer>
     
@@ -214,9 +206,6 @@
  </script>
     <script src="index.js"></script>
 
-   <!-- mdb starts here.. -->
-    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
-    <!-- Custom scripts -->
     <script type="text/javascript"></script>
 </body>
 </html>
